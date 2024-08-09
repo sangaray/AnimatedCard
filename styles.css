@@ -13,8 +13,12 @@ body {
 	font-family: sans-serif;
 	width: 100vw;
 	height: 100vh;
-	background-color: #3f3315;
+	background-color: #111;
 	overflow: hidden;
+}
+
+h2 {
+	color: #faebd7;
 }
 
 .card {
@@ -22,11 +26,11 @@ body {
 	z-index: 10;
 	margin: auto;
 	text-align: center;
-	max-width: 400px;
-	background-color: #333;
+	max-width: 300px;
+	background-color: #222;
 	border-radius: 20px;
 	overflow: hidden;
-	box-shadow: 0 0 15px 0 #7d7d7d;
+	box-shadow: 0 0 15px #989797;
 	margin-top: 40px;
 }
 
@@ -48,7 +52,68 @@ body {
 	border-radius: 50%;
 	background-color: #00ffff;
 	position: absolute;
-	top: -160px;
+	top: -180px;
 	left: 0px;
 	z-index: -1;
+}
+
+.product__information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.prod__info {
+	display: flex;
+	align-items: center;
+	color: #faebd7;
+	margin: 5px;
+}
+
+.prod__info-ram {
+	padding: 5px 15px;
+}
+
+.ram {
+	background-color: #faebd7;
+	border: 1px solid #000;
+	color: #000;
+}
+
+.prod__info-color {
+	padding: 10px 10px;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+
+.blanco {
+	background-color: #fff;
+	border: 1px solid #faebd7;
+}
+
+.negro {
+	background-color: #000;
+	border: 1px solid #faebd7;
+}
+
+.morado {
+	background-color: #8b008b;
+	border: 1px solid #faebd7;
+}
+
+.verde {
+	background-color: #7fff00;
+	border: 1px solid #faebd7;
+}
+
+.prod__info-tamano {
+	padding: 5px;
+}
+
+.btn__comprar {
+	background-color: #00ffff;
+	color: #000;
+	width: 200px;
+	height: 50px;
+	margin: 15px 0;
 }
