@@ -4,7 +4,7 @@
 }
 
 /* prettier-ignore */
-body, div {
+body, div, h2, {
   margin: 0;
   padding: 0;
 }
@@ -19,6 +19,7 @@ body {
 
 h2 {
 	color: #faebd7;
+	transition: transform 0.5s ease-in-out;
 }
 
 .card {
@@ -34,16 +35,12 @@ h2 {
 	margin-top: 40px;
 }
 
-.card__images {
-	display: flex;
-	justify-content: center;
-}
-
-.card__images img {
+img {
 	width: 180px;
 	margin: 10px;
 	transform: skewX(-10deg);
 	z-index: 20;
+	transition: transform 0.5s ease-in-out;
 }
 
 .circulo {
@@ -131,18 +128,30 @@ h2 {
 	height: 50px;
 	margin: 15px 0;
 	border-radius: 5px;
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 
-.product__information:hover {
+.card:hover .product__information {
 	transform: translateY(100px);
 	opacity: 0;
 }
 
-.product__information:hover ~ .cabecera {
+/* prettier-ignore */
+.card:hover .circulo, .card:hover h2, .card:hover img, .card:hover .product__information {
 	transform: translateY(100px);
-	transition: transform 0.5s ease-in-out;
 }
 
-.circulo:hover {
-	transform: rotate(10deg);
+.card:hover .circulo {
+	transform: rotate(40deg) translatey(50px) translatex(40px);
+}
+
+.card:hover img {
+	transform: translateY(70px) scale(1.4);
+}
+
+.card:hover h2 {
+	font-size: 2.2rem;
+	transform: translatey(120px);
+	transition: 0.5s ease-in-out;
 }
